@@ -1,0 +1,50 @@
+{
+    "name": "nahid/talk",
+    "description": "Talk is a Laravel 5 based realtime messaging, chatting and conversation system. It helps to develop users messaging, chatting and conversations in easy way.",
+    "keywords": ["message", "inbox", "conversations", "chat", "php", "laravel", "realtime", "real-time"],
+    "homepage": "https://github.com/nahid/talk",
+    "license": "CC-BY-3.0",
+    "authors": [
+        {
+            "name": "Nahid Bin Azhar",
+            "email": "nahid.dns@gmail.com"
+        }
+    ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/contracts": "5.0.* || 5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
+    "illuminate/support": "5.0.* || 5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
+    "sebastian-berc/repositories": "^1.0",
+    "nesbot/carbon": "^1.21",
+    "pusher/pusher-php-server": "^3.0"
+  },
+  "require-dev": {
+    "graham-campbell/testbench": "^3.1",
+    "phpunit/phpunit": "^4.8 || ^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nahid\\Talk\\": "src/"
+    },
+    "files": [
+      "src/helpers/talk.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Nahid\\Talk\\Tests\\": "tests/"
+    }
+  },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nahid\\Talk\\TalkServiceProvider"
+            ],
+            "aliases": {
+                "Talk": "Nahid\\Talk\\Facades\\Talk"
+            }
+        }
+    },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

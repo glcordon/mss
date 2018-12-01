@@ -1,0 +1,32 @@
+{
+    "name": "geokit/geokit",
+    "description": "Geo-Toolkit for PHP",
+    "keywords": ["geo", "geometry", "geography"],
+    "homepage": "https://github.com/jsor/geokit",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Sorgalla",
+            "email": "jsorgalla@gmail.com",
+            "homepage": "http://sorgalla.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Geokit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Geokit\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
